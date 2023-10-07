@@ -15,5 +15,11 @@ git show f65dabe
 
 
 git diff
+#ステージにgit addしたものを確認
 git diff --staged
+
+
+#直近のcommit時のメッセージを修正する場合 --amendを利用する！
+git commit --amend -m "04を追加" 
+
 

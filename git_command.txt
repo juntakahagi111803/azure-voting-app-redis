@@ -23,3 +23,7 @@ git diff --staged
 git commit --amend -m "04を追加" 
 
 
+#直近のcommit時の内容を修正する場合(内容を加筆修正したときなど。) --amendを利用する！
+
+
+

@@ -15,4 +15,5 @@ git show f65dabe
 
 
 git diff
+git diff --staged
 

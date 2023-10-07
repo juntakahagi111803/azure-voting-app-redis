@@ -5,6 +5,10 @@ git config init.defaultBranch main
 
 git status
 git add .\test.txt
+git add .
+
+
+
 git commit -m "test.txtの1回目保存を実行"
 
 git log --oneline -n 2
@@ -23,7 +27,11 @@ git diff --staged
 git commit --amend -m "04を追加" 
 
 
-#直近のcommit時の内容を修正する場合(内容を加筆修正したときなど。) --amendを利用する！
+#直近のcommit時の内容を修正する場合(内容を加筆修正したときなど。) --amend --noeditを利用する！これは新しくcommitしない前回のハッシュで良い場合。
+git commit --amend --no-edit
 
 
+#過去に戻ったり元に戻ったりする
+git checkout 3973051
+git switch -
 

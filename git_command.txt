@@ -4,6 +4,8 @@ git config --global user.email ""
 git config init.defaultBranch main
 
 git status
+
+#add
 git add .\test.txt
 git add .
 

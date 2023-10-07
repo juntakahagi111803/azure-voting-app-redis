@@ -9,9 +9,9 @@ git status
 git add .\test.txt
 git add .
 
-
-
 git commit -m "test.txtの1回目保存を実行"
+git commit -am "add無しでCommit実行"
+
 
 git log --oneline -n 2
 git log -p
@@ -33,7 +33,16 @@ git commit --amend -m "04を追加"
 git commit --amend --no-edit
 
 
-#過去に戻ったり元に戻ったりする
+#特定のハッシュに戻ったり、戻ったあとまた元に戻ったりするには
 git checkout 3973051
 git switch -
+
+
+#特定のハッシュに戻る場合git reset。ただし、もどったら、そのハッシュより新しい各ハッシュは破棄されるので注意！
+git reset [--hard --soft --mixed] [Hash]
+
+
+#Git管理対象外としたいファイルは .gitignore ファイルを作成し、このファイル内部に対象外としたいファイル名を記載する
+.gitignore
+
 

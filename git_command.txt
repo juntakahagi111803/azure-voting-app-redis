@@ -1,0 +1,18 @@
+
+git config --global user.name ""
+git config --global user.email ""
+git config init.defaultBranch main
+
+git status
+git add .\test.txt
+git commit -m "test.txtの1回目保存を実行"
+
+git log --oneline -n 2
+git log -p
+
+#コミットハッシュのみを選択して確認
+git show f65dabe
+
+
+git diff
+
